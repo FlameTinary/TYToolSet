@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"选取相册";
     self.view.backgroundColor = [UIColor whiteColor];
     [self setUpSubViews];
     
