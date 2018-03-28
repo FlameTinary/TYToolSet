@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TYBaseViewController.h"
 
-@interface TYPhotoPickerController : UIViewController
+@interface TYPhotoPickerController : TYBaseViewController
 
 @end

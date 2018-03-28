@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9D9312EC206A4DDC00A3877B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9312EB206A4DDC00A3877B /* AppDelegate.m */; };
-		9D9312EF206A4DDC00A3877B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9312EE206A4DDC00A3877B /* ViewController.m */; };
 		9D9312F2206A4DDC00A3877B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D9312F0206A4DDC00A3877B /* Main.storyboard */; };
 		9D9312F4206A4DDC00A3877B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9312F3206A4DDC00A3877B /* Assets.xcassets */; };
 		9D9312F7206A4DDC00A3877B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D9312F5206A4DDC00A3877B /* LaunchScreen.storyboard */; };
@@ -25,14 +24,14 @@
 		9DB23554206B3C0D00005D11 /* UIImage+TYImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23553206B3C0D00005D11 /* UIImage+TYImageExtension.m */; };
 		9DB23557206B3DE400005D11 /* NSData+TYDataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23556206B3DE400005D11 /* NSData+TYDataExtension.m */; };
 		9DB2355A206B3E8D00005D11 /* UIButton+TYButtonExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23559206B3E8D00005D11 /* UIButton+TYButtonExtension.m */; };
+		9DB2355D206B403900005D11 /* TYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2355C206B403900005D11 /* TYBaseViewController.m */; };
+		9DB23560206B405700005D11 /* TYExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2355F206B405700005D11 /* TYExampleController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D9312E7206A4DDC00A3877B /* TYToolSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYToolSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9312EA206A4DDC00A3877B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D9312EB206A4DDC00A3877B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9D9312ED206A4DDC00A3877B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9D9312EE206A4DDC00A3877B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9D9312F1206A4DDC00A3877B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D9312F3206A4DDC00A3877B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D9312F6206A4DDC00A3877B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +62,10 @@
 		9DB23556206B3DE400005D11 /* NSData+TYDataExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+TYDataExtension.m"; sourceTree = "<group>"; };
 		9DB23558206B3E8D00005D11 /* UIButton+TYButtonExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+TYButtonExtension.h"; sourceTree = "<group>"; };
 		9DB23559206B3E8D00005D11 /* UIButton+TYButtonExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TYButtonExtension.m"; sourceTree = "<group>"; };
+		9DB2355B206B403900005D11 /* TYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYBaseViewController.h; sourceTree = "<group>"; };
+		9DB2355C206B403900005D11 /* TYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYBaseViewController.m; sourceTree = "<group>"; };
+		9DB2355E206B405700005D11 /* TYExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYExampleController.h; sourceTree = "<group>"; };
+		9DB2355F206B405700005D11 /* TYExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYExampleController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +157,10 @@
 		9D931303206A50B600A3877B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9D9312ED206A4DDC00A3877B /* ViewController.h */,
-				9D9312EE206A4DDC00A3877B /* ViewController.m */,
+				9DB2355B206B403900005D11 /* TYBaseViewController.h */,
+				9DB2355C206B403900005D11 /* TYBaseViewController.m */,
+				9DB2355E206B405700005D11 /* TYExampleController.h */,
+				9DB2355F206B405700005D11 /* TYExampleController.m */,
 				9D931305206A512400A3877B /* TYPhotoPickerController.h */,
 				9D931306206A512400A3877B /* TYPhotoPickerController.m */,
 				9DB23540206B312700005D11 /* TYDrawViewController.h */,
@@ -246,13 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D93130A206A517000A3877B /* TYExampleItem.m in Sources */,
-				9D9312EF206A4DDC00A3877B /* ViewController.m in Sources */,
 				9DB2355A206B3E8D00005D11 /* UIButton+TYButtonExtension.m in Sources */,
 				9DB2354E206B37FF00005D11 /* UIColor+TYColorExtension.m in Sources */,
 				9DB23554206B3C0D00005D11 /* UIImage+TYImageExtension.m in Sources */,
 				9DB23542206B312700005D11 /* TYDrawViewController.m in Sources */,
 				9D9312FA206A4DDC00A3877B /* main.m in Sources */,
 				9DB2354B206B371900005D11 /* UIView+TYViewExtension.m in Sources */,
+				9DB2355D206B403900005D11 /* TYBaseViewController.m in Sources */,
 				9D931307206A512400A3877B /* TYPhotoPickerController.m in Sources */,
 				9DB23551206B39C400005D11 /* NSString+TYStringExtension.m in Sources */,
 				9D9312EC206A4DDC00A3877B /* AppDelegate.m in Sources */,
@@ -260,6 +265,7 @@
 				9DB23557206B3DE400005D11 /* NSData+TYDataExtension.m in Sources */,
 				9DB23548206B338700005D11 /* CALayer+TYLayerColor.m in Sources */,
 				9D93130D206A54D300A3877B /* TYPhotoPicker.m in Sources */,
+				9DB23560206B405700005D11 /* TYExampleController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

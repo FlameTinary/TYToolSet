@@ -1,26 +1,24 @@
 //
-//  ViewController.m
+//  TYExampleController.m
 //  TYToolSet
 //
-//  Created by user001 on 2018/3/27.
+//  Created by user001 on 2018/3/28.
 //  Copyright © 2018年 Sheldon. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TYExampleController.h"
 #import "TYExampleItem.h"
 #import "TYPhotoPickerController.h"
 #import "TYDrawViewController.h"
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
-
+@interface TYExampleController ()<UITableViewDelegate, UITableViewDataSource>
 //tableView
 @property (nonatomic, strong) UITableView * tableView;
 
 @property (nonatomic, strong) NSArray * items;
-
 @end
 
-@implementation ViewController
+@implementation TYExampleController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -71,6 +69,5 @@
     Class itemClass = item.itemClass;
     [self.navigationController pushViewController:[itemClass new] animated:YES];
 }
-
 
 @end

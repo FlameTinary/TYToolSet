@@ -1,5 +1,5 @@
 //
-//  TYDrawViewController.h
+//  TYBaseViewController.h
 //  TYToolSet
 //
 //  Created by user001 on 2018/3/28.
@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TYBaseViewController.h"
+#import "TYToolSet.h"
 
-@interface TYDrawViewController : TYBaseViewController
+@interface TYBaseViewController : UIViewController
 
 @end
