@@ -19,6 +19,12 @@
 		9DB23542206B312700005D11 /* TYDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23541206B312700005D11 /* TYDrawViewController.m */; };
 		9DB23545206B316300005D11 /* TYDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23544206B316300005D11 /* TYDrawingView.m */; };
 		9DB23548206B338700005D11 /* CALayer+TYLayerColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23547206B338700005D11 /* CALayer+TYLayerColor.m */; };
+		9DB2354B206B371900005D11 /* UIView+TYViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2354A206B371900005D11 /* UIView+TYViewExtension.m */; };
+		9DB2354E206B37FF00005D11 /* UIColor+TYColorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2354D206B37FF00005D11 /* UIColor+TYColorExtension.m */; };
+		9DB23551206B39C400005D11 /* NSString+TYStringExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23550206B39C400005D11 /* NSString+TYStringExtension.m */; };
+		9DB23554206B3C0D00005D11 /* UIImage+TYImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23553206B3C0D00005D11 /* UIImage+TYImageExtension.m */; };
+		9DB23557206B3DE400005D11 /* NSData+TYDataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23556206B3DE400005D11 /* NSData+TYDataExtension.m */; };
+		9DB2355A206B3E8D00005D11 /* UIButton+TYButtonExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23559206B3E8D00005D11 /* UIButton+TYButtonExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +51,18 @@
 		9DB23544206B316300005D11 /* TYDrawingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDrawingView.m; sourceTree = "<group>"; };
 		9DB23546206B338700005D11 /* CALayer+TYLayerColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+TYLayerColor.h"; sourceTree = "<group>"; };
 		9DB23547206B338700005D11 /* CALayer+TYLayerColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+TYLayerColor.m"; sourceTree = "<group>"; };
+		9DB23549206B371900005D11 /* UIView+TYViewExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TYViewExtension.h"; sourceTree = "<group>"; };
+		9DB2354A206B371900005D11 /* UIView+TYViewExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYViewExtension.m"; sourceTree = "<group>"; };
+		9DB2354C206B37FF00005D11 /* UIColor+TYColorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+TYColorExtension.h"; sourceTree = "<group>"; };
+		9DB2354D206B37FF00005D11 /* UIColor+TYColorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TYColorExtension.m"; sourceTree = "<group>"; };
+		9DB2354F206B39C400005D11 /* NSString+TYStringExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TYStringExtension.h"; sourceTree = "<group>"; };
+		9DB23550206B39C400005D11 /* NSString+TYStringExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TYStringExtension.m"; sourceTree = "<group>"; };
+		9DB23552206B3C0D00005D11 /* UIImage+TYImageExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+TYImageExtension.h"; sourceTree = "<group>"; };
+		9DB23553206B3C0D00005D11 /* UIImage+TYImageExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TYImageExtension.m"; sourceTree = "<group>"; };
+		9DB23555206B3DE400005D11 /* NSData+TYDataExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+TYDataExtension.h"; sourceTree = "<group>"; };
+		9DB23556206B3DE400005D11 /* NSData+TYDataExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+TYDataExtension.m"; sourceTree = "<group>"; };
+		9DB23558206B3E8D00005D11 /* UIButton+TYButtonExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+TYButtonExtension.h"; sourceTree = "<group>"; };
+		9DB23559206B3E8D00005D11 /* UIButton+TYButtonExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TYButtonExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +118,18 @@
 				9DB23544206B316300005D11 /* TYDrawingView.m */,
 				9DB23546206B338700005D11 /* CALayer+TYLayerColor.h */,
 				9DB23547206B338700005D11 /* CALayer+TYLayerColor.m */,
+				9DB23549206B371900005D11 /* UIView+TYViewExtension.h */,
+				9DB2354A206B371900005D11 /* UIView+TYViewExtension.m */,
+				9DB2354C206B37FF00005D11 /* UIColor+TYColorExtension.h */,
+				9DB2354D206B37FF00005D11 /* UIColor+TYColorExtension.m */,
+				9DB2354F206B39C400005D11 /* NSString+TYStringExtension.h */,
+				9DB23550206B39C400005D11 /* NSString+TYStringExtension.m */,
+				9DB23552206B3C0D00005D11 /* UIImage+TYImageExtension.h */,
+				9DB23553206B3C0D00005D11 /* UIImage+TYImageExtension.m */,
+				9DB23555206B3DE400005D11 /* NSData+TYDataExtension.h */,
+				9DB23556206B3DE400005D11 /* NSData+TYDataExtension.m */,
+				9DB23558206B3E8D00005D11 /* UIButton+TYButtonExtension.h */,
+				9DB23559206B3E8D00005D11 /* UIButton+TYButtonExtension.m */,
 			);
 			path = TYToolSet;
 			sourceTree = "<group>";
@@ -217,11 +247,17 @@
 			files = (
 				9D93130A206A517000A3877B /* TYExampleItem.m in Sources */,
 				9D9312EF206A4DDC00A3877B /* ViewController.m in Sources */,
+				9DB2355A206B3E8D00005D11 /* UIButton+TYButtonExtension.m in Sources */,
+				9DB2354E206B37FF00005D11 /* UIColor+TYColorExtension.m in Sources */,
+				9DB23554206B3C0D00005D11 /* UIImage+TYImageExtension.m in Sources */,
 				9DB23542206B312700005D11 /* TYDrawViewController.m in Sources */,
 				9D9312FA206A4DDC00A3877B /* main.m in Sources */,
+				9DB2354B206B371900005D11 /* UIView+TYViewExtension.m in Sources */,
 				9D931307206A512400A3877B /* TYPhotoPickerController.m in Sources */,
+				9DB23551206B39C400005D11 /* NSString+TYStringExtension.m in Sources */,
 				9D9312EC206A4DDC00A3877B /* AppDelegate.m in Sources */,
 				9DB23545206B316300005D11 /* TYDrawingView.m in Sources */,
+				9DB23557206B3DE400005D11 /* NSData+TYDataExtension.m in Sources */,
 				9DB23548206B338700005D11 /* CALayer+TYLayerColor.m in Sources */,
 				9D93130D206A54D300A3877B /* TYPhotoPicker.m in Sources */,
 			);
