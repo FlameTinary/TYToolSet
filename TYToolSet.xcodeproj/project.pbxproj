@@ -16,6 +16,9 @@
 		9D931307206A512400A3877B /* TYPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D931306206A512400A3877B /* TYPhotoPickerController.m */; };
 		9D93130A206A517000A3877B /* TYExampleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D931309206A517000A3877B /* TYExampleItem.m */; };
 		9D93130D206A54D300A3877B /* TYPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D93130C206A54D300A3877B /* TYPhotoPicker.m */; };
+		9DB23542206B312700005D11 /* TYDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23541206B312700005D11 /* TYDrawViewController.m */; };
+		9DB23545206B316300005D11 /* TYDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23544206B316300005D11 /* TYDrawingView.m */; };
+		9DB23548206B338700005D11 /* CALayer+TYLayerColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23547206B338700005D11 /* CALayer+TYLayerColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,12 @@
 		9D93130B206A54D300A3877B /* TYPhotoPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYPhotoPicker.h; sourceTree = "<group>"; };
 		9D93130C206A54D300A3877B /* TYPhotoPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYPhotoPicker.m; sourceTree = "<group>"; };
 		9D93130E206A559600A3877B /* TYToolSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYToolSet.h; sourceTree = "<group>"; };
+		9DB23540206B312700005D11 /* TYDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDrawViewController.h; sourceTree = "<group>"; };
+		9DB23541206B312700005D11 /* TYDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDrawViewController.m; sourceTree = "<group>"; };
+		9DB23543206B316300005D11 /* TYDrawingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDrawingView.h; sourceTree = "<group>"; };
+		9DB23544206B316300005D11 /* TYDrawingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDrawingView.m; sourceTree = "<group>"; };
+		9DB23546206B338700005D11 /* CALayer+TYLayerColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+TYLayerColor.h"; sourceTree = "<group>"; };
+		9DB23547206B338700005D11 /* CALayer+TYLayerColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+TYLayerColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +96,10 @@
 				9D93130E206A559600A3877B /* TYToolSet.h */,
 				9D93130B206A54D300A3877B /* TYPhotoPicker.h */,
 				9D93130C206A54D300A3877B /* TYPhotoPicker.m */,
+				9DB23543206B316300005D11 /* TYDrawingView.h */,
+				9DB23544206B316300005D11 /* TYDrawingView.m */,
+				9DB23546206B338700005D11 /* CALayer+TYLayerColor.h */,
+				9DB23547206B338700005D11 /* CALayer+TYLayerColor.m */,
 			);
 			path = TYToolSet;
 			sourceTree = "<group>";
@@ -115,6 +128,8 @@
 				9D9312EE206A4DDC00A3877B /* ViewController.m */,
 				9D931305206A512400A3877B /* TYPhotoPickerController.h */,
 				9D931306206A512400A3877B /* TYPhotoPickerController.m */,
+				9DB23540206B312700005D11 /* TYDrawViewController.h */,
+				9DB23541206B312700005D11 /* TYDrawViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -202,9 +217,12 @@
 			files = (
 				9D93130A206A517000A3877B /* TYExampleItem.m in Sources */,
 				9D9312EF206A4DDC00A3877B /* ViewController.m in Sources */,
+				9DB23542206B312700005D11 /* TYDrawViewController.m in Sources */,
 				9D9312FA206A4DDC00A3877B /* main.m in Sources */,
 				9D931307206A512400A3877B /* TYPhotoPickerController.m in Sources */,
 				9D9312EC206A4DDC00A3877B /* AppDelegate.m in Sources */,
+				9DB23545206B316300005D11 /* TYDrawingView.m in Sources */,
+				9DB23548206B338700005D11 /* CALayer+TYLayerColor.m in Sources */,
 				9D93130D206A54D300A3877B /* TYPhotoPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TYExampleItem.h"
 #import "TYPhotoPickerController.h"
+#import "TYDrawViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -25,8 +26,9 @@
     [super viewDidLoad];
     
     TYExampleItem * item0 = [TYExampleItem itemWithTitle:@"选取相册" object:[TYPhotoPickerController class]];
+    TYExampleItem * item1 = [TYExampleItem itemWithTitle:@"绘制文字" object:[TYDrawViewController class]];
     
-    _items = [NSArray arrayWithObjects:item0, nil];
+    _items = [NSArray arrayWithObjects:item0, item1, nil];
     
     [self setUpTableView];
 }
