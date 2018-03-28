@@ -26,6 +26,9 @@
 		9DB2355A206B3E8D00005D11 /* UIButton+TYButtonExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23559206B3E8D00005D11 /* UIButton+TYButtonExtension.m */; };
 		9DB2355D206B403900005D11 /* TYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2355C206B403900005D11 /* TYBaseViewController.m */; };
 		9DB23560206B405700005D11 /* TYExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2355F206B405700005D11 /* TYExampleController.m */; };
+		9DB23563206B7F9800005D11 /* TYPresentBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23562206B7F9800005D11 /* TYPresentBaseController.m */; };
+		9DB23566206B7FCE00005D11 /* TYPresentTransitionOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23565206B7FCE00005D11 /* TYPresentTransitionOne.m */; };
+		9DB23569206B820F00005D11 /* TYPresentDestinationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23568206B820F00005D11 /* TYPresentDestinationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,12 @@
 		9DB2355C206B403900005D11 /* TYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYBaseViewController.m; sourceTree = "<group>"; };
 		9DB2355E206B405700005D11 /* TYExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYExampleController.h; sourceTree = "<group>"; };
 		9DB2355F206B405700005D11 /* TYExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYExampleController.m; sourceTree = "<group>"; };
+		9DB23561206B7F9800005D11 /* TYPresentBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYPresentBaseController.h; sourceTree = "<group>"; };
+		9DB23562206B7F9800005D11 /* TYPresentBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYPresentBaseController.m; sourceTree = "<group>"; };
+		9DB23564206B7FCE00005D11 /* TYPresentTransitionOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYPresentTransitionOne.h; sourceTree = "<group>"; };
+		9DB23565206B7FCE00005D11 /* TYPresentTransitionOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYPresentTransitionOne.m; sourceTree = "<group>"; };
+		9DB23567206B820F00005D11 /* TYPresentDestinationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYPresentDestinationController.h; sourceTree = "<group>"; };
+		9DB23568206B820F00005D11 /* TYPresentDestinationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYPresentDestinationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +174,12 @@
 				9D931306206A512400A3877B /* TYPhotoPickerController.m */,
 				9DB23540206B312700005D11 /* TYDrawViewController.h */,
 				9DB23541206B312700005D11 /* TYDrawViewController.m */,
+				9DB23561206B7F9800005D11 /* TYPresentBaseController.h */,
+				9DB23562206B7F9800005D11 /* TYPresentBaseController.m */,
+				9DB23567206B820F00005D11 /* TYPresentDestinationController.h */,
+				9DB23568206B820F00005D11 /* TYPresentDestinationController.m */,
+				9DB23564206B7FCE00005D11 /* TYPresentTransitionOne.h */,
+				9DB23565206B7FCE00005D11 /* TYPresentTransitionOne.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -254,6 +269,7 @@
 				9DB2355A206B3E8D00005D11 /* UIButton+TYButtonExtension.m in Sources */,
 				9DB2354E206B37FF00005D11 /* UIColor+TYColorExtension.m in Sources */,
 				9DB23554206B3C0D00005D11 /* UIImage+TYImageExtension.m in Sources */,
+				9DB23563206B7F9800005D11 /* TYPresentBaseController.m in Sources */,
 				9DB23542206B312700005D11 /* TYDrawViewController.m in Sources */,
 				9D9312FA206A4DDC00A3877B /* main.m in Sources */,
 				9DB2354B206B371900005D11 /* UIView+TYViewExtension.m in Sources */,
@@ -263,8 +279,10 @@
 				9D9312EC206A4DDC00A3877B /* AppDelegate.m in Sources */,
 				9DB23545206B316300005D11 /* TYDrawingView.m in Sources */,
 				9DB23557206B3DE400005D11 /* NSData+TYDataExtension.m in Sources */,
+				9DB23566206B7FCE00005D11 /* TYPresentTransitionOne.m in Sources */,
 				9DB23548206B338700005D11 /* CALayer+TYLayerColor.m in Sources */,
 				9D93130D206A54D300A3877B /* TYPhotoPicker.m in Sources */,
+				9DB23569206B820F00005D11 /* TYPresentDestinationController.m in Sources */,
 				9DB23560206B405700005D11 /* TYExampleController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

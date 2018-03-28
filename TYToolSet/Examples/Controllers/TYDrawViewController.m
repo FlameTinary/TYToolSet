@@ -17,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationItem.title = @"绘制文字";
+    
     TYDrawingView * drawView = [TYDrawingView new];
     drawView.frame = CGRectMake(100, 200, 200, 44);
     drawView.title = @"我是绘制的文字";
