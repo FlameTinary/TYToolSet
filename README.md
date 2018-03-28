@@ -1,7 +1,9 @@
 # TYToolSet
 工具集合
 ## TYPhotoPicker
+
 **简介：**用于获取系统相册图片和照相机拍照图片
+
 **用法：**
 导入头文件
 
@@ -17,7 +19,9 @@
 ```
 
 ## TYDrawingView
+
 **简介：**用于在View上绘制文字，主要用于解决定时器倒计时文字晃动
+
 **用法：**
 导入头文件
 
@@ -35,14 +39,19 @@ drawView.title = @"我是绘制的文字";
 ```
 
 ## CALayer+TYLayerColor
+
 **简介：**用于支持xib中设置borderColor
 
 **示例：**
+
 ![Snip20180328_1](http://7xtfqf.com1.z0.glb.clouddn.com/Snip20180328_1.png)
 
 ## UIView+TYViewExtension
+
 **简介：**UIView的扩展
+
 ## UIColor+TYColorExtension
+
 **简介：**UIColor的扩展
 
 随机颜色
@@ -65,6 +74,7 @@ drawView.title = @"我是绘制的文字";
 ```
 
 ## NSString+TYStringExtension
+
 **简介：**NSString的扩展
 
 时间字符串
@@ -109,6 +119,7 @@ drawView.title = @"我是绘制的文字";
 ```
 
 ## UIImage+TYImageExtension
+
 **简介：**UIImage的扩展
 
 相关方法：
@@ -147,6 +158,7 @@ drawView.title = @"我是绘制的文字";
 ```
 
 ## NSData+TYDataExtension
+
 **简介：**NSData的扩展
 
 相关方法：
@@ -159,6 +171,7 @@ drawView.title = @"我是绘制的文字";
 ```
 
 ## UIButton+TYButtonExtension
+
 **简介：**UIButton的扩展
 
 相关：
