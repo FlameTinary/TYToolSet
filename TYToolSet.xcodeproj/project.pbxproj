@@ -15,6 +15,8 @@
 		9D931307206A512400A3877B /* TYPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D931306206A512400A3877B /* TYPhotoPickerController.m */; };
 		9D93130A206A517000A3877B /* TYExampleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D931309206A517000A3877B /* TYExampleItem.m */; };
 		9D93130D206A54D300A3877B /* TYPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D93130C206A54D300A3877B /* TYPhotoPicker.m */; };
+		9D958E5A206C84F4009CFC6F /* TYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D958E59206C84F4009CFC6F /* TYTools.m */; };
+		9D958E5D206C894A009CFC6F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D958E5C206C894A009CFC6F /* CoreTelephony.framework */; };
 		9DB23542206B312700005D11 /* TYDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23541206B312700005D11 /* TYDrawViewController.m */; };
 		9DB23545206B316300005D11 /* TYDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23544206B316300005D11 /* TYDrawingView.m */; };
 		9DB23548206B338700005D11 /* CALayer+TYLayerColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23547206B338700005D11 /* CALayer+TYLayerColor.m */; };
@@ -47,6 +49,9 @@
 		9D93130B206A54D300A3877B /* TYPhotoPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYPhotoPicker.h; sourceTree = "<group>"; };
 		9D93130C206A54D300A3877B /* TYPhotoPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYPhotoPicker.m; sourceTree = "<group>"; };
 		9D93130E206A559600A3877B /* TYToolSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYToolSet.h; sourceTree = "<group>"; };
+		9D958E58206C84F4009CFC6F /* TYTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTools.h; sourceTree = "<group>"; };
+		9D958E59206C84F4009CFC6F /* TYTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYTools.m; sourceTree = "<group>"; };
+		9D958E5C206C894A009CFC6F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		9DB23540206B312700005D11 /* TYDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDrawViewController.h; sourceTree = "<group>"; };
 		9DB23541206B312700005D11 /* TYDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDrawViewController.m; sourceTree = "<group>"; };
 		9DB23543206B316300005D11 /* TYDrawingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDrawingView.h; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D958E5D206C894A009CFC6F /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +99,7 @@
 			children = (
 				9D9312E9206A4DDC00A3877B /* TYToolSet */,
 				9D9312E8206A4DDC00A3877B /* Products */,
+				9D958E5B206C894A009CFC6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				9D93130E206A559600A3877B /* TYToolSet.h */,
+				9D958E58206C84F4009CFC6F /* TYTools.h */,
+				9D958E59206C84F4009CFC6F /* TYTools.m */,
 				9D93130B206A54D300A3877B /* TYPhotoPicker.h */,
 				9D93130C206A54D300A3877B /* TYPhotoPicker.m */,
 				9DB23543206B316300005D11 /* TYDrawingView.h */,
@@ -191,6 +200,14 @@
 				9D931309206A517000A3877B /* TYExampleItem.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9D958E5B206C894A009CFC6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D958E5C206C894A009CFC6F /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +292,7 @@
 				9DB2354B206B371900005D11 /* UIView+TYViewExtension.m in Sources */,
 				9DB2355D206B403900005D11 /* TYBaseViewController.m in Sources */,
 				9D931307206A512400A3877B /* TYPhotoPickerController.m in Sources */,
+				9D958E5A206C84F4009CFC6F /* TYTools.m in Sources */,
 				9DB23551206B39C400005D11 /* NSString+TYStringExtension.m in Sources */,
 				9D9312EC206A4DDC00A3877B /* AppDelegate.m in Sources */,
 				9DB23545206B316300005D11 /* TYDrawingView.m in Sources */,

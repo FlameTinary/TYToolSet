@@ -11,6 +11,7 @@
 
 #import "TYPhotoPicker.h"
 #import "TYDrawingView.h"
+#import "TYTools.h"
 
 
 #endif /* TYToolSet_h */
