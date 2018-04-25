@@ -14,7 +14,6 @@
 
 @implementation TYBaseViewController
 
-// 修正测试分支
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
