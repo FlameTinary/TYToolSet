@@ -11,6 +11,7 @@
 #import "TYPhotoPickerController.h"
 #import "TYDrawViewController.h"
 #import "TYPresentBaseController.h"
+#import "TYCABaseAnimationViewController.h"
 
 @interface TYExampleController ()<UITableViewDelegate, UITableViewDataSource>
 //tableView
@@ -27,8 +28,9 @@
     TYExampleItem * item0 = [TYExampleItem itemWithTitle:@"选取相册" object:[TYPhotoPickerController class]];
     TYExampleItem * item1 = [TYExampleItem itemWithTitle:@"绘制文字" object:[TYDrawViewController class]];
     TYExampleItem * item2 = [TYExampleItem itemWithTitle:@"转场动画" object:[TYPresentBaseController class]];
+    TYExampleItem * item3 = [TYExampleItem itemWithTitle:@"CABaseAnimation" object:[TYCABaseAnimationViewController class]];
     
-    _items = [NSArray arrayWithObjects:item0, item1, item2, nil];
+    _items = [NSArray arrayWithObjects:item0, item1, item2, item3, nil];
     
     [self setUpTableView];
 }
