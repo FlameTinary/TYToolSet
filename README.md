@@ -186,5 +186,6 @@ drawView.title = @"我是绘制的文字";
  */
 @property (nonatomic, assign) BOOL isIgnore;
 ```
-
+## TYWeakProxy
+**简介** 用于定时器解耦,防止强引用
 

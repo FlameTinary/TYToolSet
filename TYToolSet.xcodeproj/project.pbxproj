@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D830275216067090096B832 /* TYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D830273216067090096B832 /* TYWeakProxy.m */; };
 		9D9312EC206A4DDC00A3877B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9312EB206A4DDC00A3877B /* AppDelegate.m */; };
 		9D9312F2206A4DDC00A3877B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D9312F0206A4DDC00A3877B /* Main.storyboard */; };
 		9D9312F4206A4DDC00A3877B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9312F3206A4DDC00A3877B /* Assets.xcassets */; };
@@ -34,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D830273216067090096B832 /* TYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYWeakProxy.m; sourceTree = "<group>"; };
+		9D830274216067090096B832 /* TYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYWeakProxy.h; sourceTree = "<group>"; };
 		9D9312E7206A4DDC00A3877B /* TYToolSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYToolSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9312EA206A4DDC00A3877B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D9312EB206A4DDC00A3877B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				9D93130E206A559600A3877B /* TYToolSet.h */,
 				9D958E58206C84F4009CFC6F /* TYTools.h */,
 				9D958E59206C84F4009CFC6F /* TYTools.m */,
+				9D830274216067090096B832 /* TYWeakProxy.h */,
+				9D830273216067090096B832 /* TYWeakProxy.m */,
 				9D93130B206A54D300A3877B /* TYPhotoPicker.h */,
 				9D93130C206A54D300A3877B /* TYPhotoPicker.m */,
 				9DB23543206B316300005D11 /* TYDrawingView.h */,
@@ -291,6 +296,7 @@
 				9D9312FA206A4DDC00A3877B /* main.m in Sources */,
 				9DB2354B206B371900005D11 /* UIView+TYViewExtension.m in Sources */,
 				9DB2355D206B403900005D11 /* TYBaseViewController.m in Sources */,
+				9D830275216067090096B832 /* TYWeakProxy.m in Sources */,
 				9D931307206A512400A3877B /* TYPhotoPickerController.m in Sources */,
 				9D958E5A206C84F4009CFC6F /* TYTools.m in Sources */,
 				9DB23551206B39C400005D11 /* NSString+TYStringExtension.m in Sources */,
@@ -436,7 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CJ5L2XW65B;
+				DEVELOPMENT_TEAM = 6LA8KPQD37;
 				INFOPLIST_FILE = TYToolSet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sheldon.TYToolSet;
@@ -450,7 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CJ5L2XW65B;
+				DEVELOPMENT_TEAM = 6LA8KPQD37;
 				INFOPLIST_FILE = TYToolSet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sheldon.TYToolSet;
