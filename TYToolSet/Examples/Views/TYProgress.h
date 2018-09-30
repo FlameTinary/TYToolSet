@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TYProgress : UIView
-
+@property(nonatomic, assign)CGFloat progress;
+@property(nonatomic, assign)CFTimeInterval duration;
 @end

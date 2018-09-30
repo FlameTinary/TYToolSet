@@ -16,57 +16,69 @@
 @implementation TYProgress
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-//        self.backgroundColor = [UIColor lightGrayColor];
-//        self.layer.cornerRadius = frame.size.height/2;
-//        self.layer.masksToBounds = YES;
+        
         [self shapeAnimationFrame:frame];
     }
     return self;
 }
 
 - (void)shapeAnimationFrame:(CGRect)frame {
-    UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(0, 0)];
-    [path addLineToPoint:CGPointMake(frame.size.width/2, 0)];
-    [path addLineToPoint:CGPointMake(frame.size.width, 0)];
+    UIBezierPath * path = [self createBezierPath];
     
+    _backLayer = [self createShapeLayerWithColor:[UIColor lightGrayColor] path:path];
+    
+    _progressLayer = [self createShapeLayerWithColor:[UIColor orangeColor] path:path];
+    
+}
+
+
+- (void)setProgress:(CGFloat)progress {
+    _progress = progress;
+    if (_progress < 0) {
+        _progress = 0;
+    }
+    if (_progress > 1) {
+        _progress = 1;
+    }
+    [self startBasicAnimation];
+}
+
+
+- (void)startBasicAnimation {
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     //每次动画的持续时间
-    animation.duration = 5;
+    animation.duration = _duration;
     //动画起始位置
-    animation.fromValue = @(1);
+    animation.fromValue = @(_progress);
     //动画结束位置
     animation.toValue = @(0);
     //动画重复次数
-    animation.repeatCount = 100;
-    
-    CAShapeLayer *bglayer = [self createBackShape:[UIColor lightGrayColor]];
-    bglayer.path = path.CGPath;
-    bglayer.lineWidth = frame.size.height;
-    
-    CAShapeLayer *layer = [self createShapeLayerNoFrame:[UIColor orangeColor]];
-    layer.path = path.CGPath;
-    layer.lineWidth = frame.size.height;
-    //设置图形的弧度
-    //    layer.strokeStart = 0;
-    //    layer.strokeEnd = 0;
-    [layer addAnimation:animation forKey:@"strokeEndAnimation"];
-    //注：由于UIBezierPath已经设置路径，所以动画的路径就不需要再次设置，只需要设置起始0与结束1就行，有需要可以设置动画结束后是否需要返回原位置。
+    animation.repeatCount = 1;
+    [_progressLayer removeAllAnimations];
+    [_progressLayer addAnimation:animation forKey:@"strokeEndAnimation"];
 }
 
-- (CAShapeLayer *)createBackShape:(UIColor *)color {
-    CAShapeLayer *layer = [CAShapeLayer layer];
-    layer.frame = self.bounds;
-    //设置描边色
-    layer.strokeColor = color.CGColor;
-    layer.lineCap = @"round";
-    //设置填充色
-    layer.fillColor = [UIColor blackColor].CGColor;
-    [self.layer addSublayer:layer];
-    return layer;
+/**
+ 生成路径
+
+ @return path
+ */
+- (UIBezierPath *)createBezierPath {
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:CGPointMake(0, 0)];
+    [path addLineToPoint:CGPointMake(self.frame.size.width/2, 0)];
+    [path addLineToPoint:CGPointMake(self.frame.size.width, 0)];
+    return path;
 }
 
-- (CAShapeLayer *)createShapeLayerNoFrame:(UIColor *)color
+/**
+ 生成CAShapeLayer
+
+ @param color 颜色
+ @param path 路径
+ @return CAShapeLayer
+ */
+- (CAShapeLayer *)createShapeLayerWithColor:(UIColor *)color path:(UIBezierPath *)path
 {
     CAShapeLayer *layer = [CAShapeLayer layer];
     layer.frame = self.bounds;
@@ -74,7 +86,9 @@
     //设置描边色
     layer.strokeColor = color.CGColor;
     //设置填充色
-    layer.fillColor = [UIColor blackColor].CGColor;
+    layer.fillColor = [UIColor clearColor].CGColor;
+    layer.path = path.CGPath;
+    layer.lineWidth = self.frame.size.height;
     [self.layer addSublayer:layer];
     
     return layer;

@@ -24,6 +24,8 @@
     [self animationForHeart];
     
     TYProgress *progress = [[TYProgress alloc] initWithFrame:CGRectMake(50, 100, 200, 10)];
+    progress.duration = 10.0;
+    progress.progress = 1.0;
     [self.view addSubview:progress];
     
 }
