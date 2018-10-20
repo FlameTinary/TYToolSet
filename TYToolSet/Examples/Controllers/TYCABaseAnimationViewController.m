@@ -9,9 +9,12 @@
 #import "TYCABaseAnimationViewController.h"
 #import "TYHeartView.h"
 #import "TYProgress.h"
+#import "TYDispatchTimer.h"
+#import "UIColor+TYColorExtension.h"
 
 @interface TYCABaseAnimationViewController ()
-
+@property(nonatomic, strong)TYProgress *progress; // 倒计时视图
+@property(nonatomic, assign)CGFloat countDownTime;
 @end
 
 @implementation TYCABaseAnimationViewController
@@ -20,13 +23,10 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"CABaseAnimation";
-    
-    [self animationForHeart];
-    
-    TYProgress *progress = [[TYProgress alloc] initWithFrame:CGRectMake(50, 100, 200, 10)];
-    progress.duration = 10.0;
-    progress.progress = 1.0;
-    [self.view addSubview:progress];
+    _countDownTime = 1.0;
+    //[self animationForHeart];
+    [self.view addSubview:self.progress];
+    [self startTimer];
     
 }
 
@@ -47,6 +47,33 @@
     pulseAnimation.repeatCount = FLT_MAX;
     // 添加动画到layer
     [heartView.layer addAnimation:pulseAnimation forKey:@"transform.scale"];
+}
+
+
+#pragma mark - Timer
+- (void)startTimer {
+    [TYDispatchTimer scheduleDispatchTimerWithName:@"progressTimer" timeInterval:1.0 queue:dispatch_get_main_queue() repeats:YES action:^{
+        self.progress.duration = 1.0;
+//        self.progress.progress = _countDownTime;
+        self.progress.fromValue = _countDownTime;
+        _countDownTime -= 0.1;
+        self.progress.toValue = _countDownTime;
+        [self.progress startBasicAnimation];
+        if (_countDownTime <= 0) {
+            _countDownTime = 1.0;
+            //            [TYDispatchTimer cancelAllTimer];
+            self.progress.progressColor = [UIColor randomColor];
+        }
+    }];
+}
+
+
+#pragma mark - lazy
+- (TYProgress *)progress {
+    if (!_progress) {
+        _progress = [[TYProgress alloc] initWithFrame:CGRectMake(50, 100, 200, 10)];
+    }
+    return _progress;
 }
 
 @end

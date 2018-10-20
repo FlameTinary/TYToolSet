@@ -32,6 +32,10 @@
 		9DB23563206B7F9800005D11 /* TYPresentBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23562206B7F9800005D11 /* TYPresentBaseController.m */; };
 		9DB23566206B7FCE00005D11 /* TYPresentTransitionOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23565206B7FCE00005D11 /* TYPresentTransitionOne.m */; };
 		9DB23569206B820F00005D11 /* TYPresentDestinationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23568206B820F00005D11 /* TYPresentDestinationController.m */; };
+		9DB61B4C21606C2000A4E897 /* TYCABaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB61B4B21606C2000A4E897 /* TYCABaseAnimationViewController.m */; };
+		9DB61B5121606D0700A4E897 /* TYHeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB61B5021606D0700A4E897 /* TYHeartView.m */; };
+		9DB61B572160C45A00A4E897 /* TYProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB61B562160C45A00A4E897 /* TYProgress.m */; };
+		9DC62F2A2179BD3C00EC0C3D /* TYDispatchTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC62F292179BD3C00EC0C3D /* TYDispatchTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +87,14 @@
 		9DB23565206B7FCE00005D11 /* TYPresentTransitionOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYPresentTransitionOne.m; sourceTree = "<group>"; };
 		9DB23567206B820F00005D11 /* TYPresentDestinationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYPresentDestinationController.h; sourceTree = "<group>"; };
 		9DB23568206B820F00005D11 /* TYPresentDestinationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYPresentDestinationController.m; sourceTree = "<group>"; };
+		9DB61B4A21606C2000A4E897 /* TYCABaseAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYCABaseAnimationViewController.h; sourceTree = "<group>"; };
+		9DB61B4B21606C2000A4E897 /* TYCABaseAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYCABaseAnimationViewController.m; sourceTree = "<group>"; };
+		9DB61B4F21606D0700A4E897 /* TYHeartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYHeartView.h; sourceTree = "<group>"; };
+		9DB61B5021606D0700A4E897 /* TYHeartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYHeartView.m; sourceTree = "<group>"; };
+		9DB61B552160C45A00A4E897 /* TYProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYProgress.h; sourceTree = "<group>"; };
+		9DB61B562160C45A00A4E897 /* TYProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYProgress.m; sourceTree = "<group>"; };
+		9DC62F282179BD3C00EC0C3D /* TYDispatchTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDispatchTimer.h; sourceTree = "<group>"; };
+		9DC62F292179BD3C00EC0C3D /* TYDispatchTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDispatchTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +168,8 @@
 				9DB23556206B3DE400005D11 /* NSData+TYDataExtension.m */,
 				9DB23558206B3E8D00005D11 /* UIButton+TYButtonExtension.h */,
 				9DB23559206B3E8D00005D11 /* UIButton+TYButtonExtension.m */,
+				9DC62F282179BD3C00EC0C3D /* TYDispatchTimer.h */,
+				9DC62F292179BD3C00EC0C3D /* TYDispatchTimer.m */,
 			);
 			path = TYToolSet;
 			sourceTree = "<group>";
@@ -165,16 +179,9 @@
 			children = (
 				9D931303206A50B600A3877B /* Controllers */,
 				9D931304206A50B600A3877B /* Models */,
-				9D931302206A50B600A3877B /* Views */,
+				9DB61B4E21606CD600A4E897 /* Views */,
 			);
 			path = Examples;
-			sourceTree = "<group>";
-		};
-		9D931302206A50B600A3877B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		9D931303206A50B600A3877B /* Controllers */ = {
@@ -194,6 +201,8 @@
 				9DB23568206B820F00005D11 /* TYPresentDestinationController.m */,
 				9DB23564206B7FCE00005D11 /* TYPresentTransitionOne.h */,
 				9DB23565206B7FCE00005D11 /* TYPresentTransitionOne.m */,
+				9DB61B4A21606C2000A4E897 /* TYCABaseAnimationViewController.h */,
+				9DB61B4B21606C2000A4E897 /* TYCABaseAnimationViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -213,6 +222,17 @@
 				9D958E5C206C894A009CFC6F /* CoreTelephony.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DB61B4E21606CD600A4E897 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DB61B4F21606D0700A4E897 /* TYHeartView.h */,
+				9DB61B5021606D0700A4E897 /* TYHeartView.m */,
+				9DB61B552160C45A00A4E897 /* TYProgress.h */,
+				9DB61B562160C45A00A4E897 /* TYProgress.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +314,7 @@
 				9DB23563206B7F9800005D11 /* TYPresentBaseController.m in Sources */,
 				9DB23542206B312700005D11 /* TYDrawViewController.m in Sources */,
 				9D9312FA206A4DDC00A3877B /* main.m in Sources */,
+				9DB61B4C21606C2000A4E897 /* TYCABaseAnimationViewController.m in Sources */,
 				9DB2354B206B371900005D11 /* UIView+TYViewExtension.m in Sources */,
 				9DB2355D206B403900005D11 /* TYBaseViewController.m in Sources */,
 				9D830275216067090096B832 /* TYWeakProxy.m in Sources */,
@@ -303,10 +324,13 @@
 				9D9312EC206A4DDC00A3877B /* AppDelegate.m in Sources */,
 				9DB23545206B316300005D11 /* TYDrawingView.m in Sources */,
 				9DB23557206B3DE400005D11 /* NSData+TYDataExtension.m in Sources */,
+				9DB61B572160C45A00A4E897 /* TYProgress.m in Sources */,
 				9DB23566206B7FCE00005D11 /* TYPresentTransitionOne.m in Sources */,
 				9DB23548206B338700005D11 /* CALayer+TYLayerColor.m in Sources */,
 				9D93130D206A54D300A3877B /* TYPhotoPicker.m in Sources */,
+				9DB61B5121606D0700A4E897 /* TYHeartView.m in Sources */,
 				9DB23569206B820F00005D11 /* TYPresentDestinationController.m in Sources */,
+				9DC62F2A2179BD3C00EC0C3D /* TYDispatchTimer.m in Sources */,
 				9DB23560206B405700005D11 /* TYExampleController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LA8KPQD37;
+				DEVELOPMENT_TEAM = CJ5L2XW65B;
 				INFOPLIST_FILE = TYToolSet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sheldon.TYToolSet;
@@ -456,7 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LA8KPQD37;
+				DEVELOPMENT_TEAM = CJ5L2XW65B;
 				INFOPLIST_FILE = TYToolSet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sheldon.TYToolSet;
