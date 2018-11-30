@@ -95,6 +95,7 @@
 		9DB61B562160C45A00A4E897 /* TYProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYProgress.m; sourceTree = "<group>"; };
 		9DC62F282179BD3C00EC0C3D /* TYDispatchTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDispatchTimer.h; sourceTree = "<group>"; };
 		9DC62F292179BD3C00EC0C3D /* TYDispatchTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDispatchTimer.m; sourceTree = "<group>"; };
+		B7BF4A1221B147C500498CD2 /* TYSingleMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSingleMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +171,7 @@
 				9DB23559206B3E8D00005D11 /* UIButton+TYButtonExtension.m */,
 				9DC62F282179BD3C00EC0C3D /* TYDispatchTimer.h */,
 				9DC62F292179BD3C00EC0C3D /* TYDispatchTimer.m */,
+				B7BF4A1221B147C500498CD2 /* TYSingleMacro.h */,
 			);
 			path = TYToolSet;
 			sourceTree = "<group>";
