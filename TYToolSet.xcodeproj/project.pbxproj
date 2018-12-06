@@ -36,6 +36,7 @@
 		9DB61B5121606D0700A4E897 /* TYHeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB61B5021606D0700A4E897 /* TYHeartView.m */; };
 		9DB61B572160C45A00A4E897 /* TYProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB61B562160C45A00A4E897 /* TYProgress.m */; };
 		9DC62F2A2179BD3C00EC0C3D /* TYDispatchTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC62F292179BD3C00EC0C3D /* TYDispatchTimer.m */; };
+		B7460C4021B918D2001A72E5 /* TYAboutSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7460C3F21B918D2001A72E5 /* TYAboutSwiftVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,8 @@
 		9DB61B562160C45A00A4E897 /* TYProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYProgress.m; sourceTree = "<group>"; };
 		9DC62F282179BD3C00EC0C3D /* TYDispatchTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDispatchTimer.h; sourceTree = "<group>"; };
 		9DC62F292179BD3C00EC0C3D /* TYDispatchTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDispatchTimer.m; sourceTree = "<group>"; };
+		B7460C3C21B91829001A72E5 /* TYToolSet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TYToolSet-Bridging-Header.h"; sourceTree = "<group>"; };
+		B7460C3F21B918D2001A72E5 /* TYAboutSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYAboutSwiftVC.swift; sourceTree = "<group>"; };
 		B7BF4A1221B147C500498CD2 /* TYSingleMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSingleMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,32 +149,10 @@
 		9D931300206A506A00A3877B /* TYToolSet */ = {
 			isa = PBXGroup;
 			children = (
-				9D93130E206A559600A3877B /* TYToolSet.h */,
-				9D958E58206C84F4009CFC6F /* TYTools.h */,
-				9D958E59206C84F4009CFC6F /* TYTools.m */,
-				9D830274216067090096B832 /* TYWeakProxy.h */,
-				9D830273216067090096B832 /* TYWeakProxy.m */,
-				9D93130B206A54D300A3877B /* TYPhotoPicker.h */,
-				9D93130C206A54D300A3877B /* TYPhotoPicker.m */,
-				9DB23543206B316300005D11 /* TYDrawingView.h */,
-				9DB23544206B316300005D11 /* TYDrawingView.m */,
-				9DB23546206B338700005D11 /* CALayer+TYLayerColor.h */,
-				9DB23547206B338700005D11 /* CALayer+TYLayerColor.m */,
-				9DB23549206B371900005D11 /* UIView+TYViewExtension.h */,
-				9DB2354A206B371900005D11 /* UIView+TYViewExtension.m */,
-				9DB2354C206B37FF00005D11 /* UIColor+TYColorExtension.h */,
-				9DB2354D206B37FF00005D11 /* UIColor+TYColorExtension.m */,
-				9DB2354F206B39C400005D11 /* NSString+TYStringExtension.h */,
-				9DB23550206B39C400005D11 /* NSString+TYStringExtension.m */,
-				9DB23552206B3C0D00005D11 /* UIImage+TYImageExtension.h */,
-				9DB23553206B3C0D00005D11 /* UIImage+TYImageExtension.m */,
-				9DB23555206B3DE400005D11 /* NSData+TYDataExtension.h */,
-				9DB23556206B3DE400005D11 /* NSData+TYDataExtension.m */,
-				9DB23558206B3E8D00005D11 /* UIButton+TYButtonExtension.h */,
-				9DB23559206B3E8D00005D11 /* UIButton+TYButtonExtension.m */,
-				9DC62F282179BD3C00EC0C3D /* TYDispatchTimer.h */,
-				9DC62F292179BD3C00EC0C3D /* TYDispatchTimer.m */,
-				B7BF4A1221B147C500498CD2 /* TYSingleMacro.h */,
+				B7460C3B21B917CA001A72E5 /* Others */,
+				B7460C3A21B917AD001A72E5 /* AboutSwift */,
+				B7460C3921B916EF001A72E5 /* TYDispatchTimer */,
+				B7460C3821B916A9001A72E5 /* TYExtension */,
 			);
 			path = TYToolSet;
 			sourceTree = "<group>";
@@ -237,6 +218,62 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B7460C3821B916A9001A72E5 /* TYExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9DB23546206B338700005D11 /* CALayer+TYLayerColor.h */,
+				9DB23547206B338700005D11 /* CALayer+TYLayerColor.m */,
+				9DB23549206B371900005D11 /* UIView+TYViewExtension.h */,
+				9DB2354A206B371900005D11 /* UIView+TYViewExtension.m */,
+				9DB2354C206B37FF00005D11 /* UIColor+TYColorExtension.h */,
+				9DB2354D206B37FF00005D11 /* UIColor+TYColorExtension.m */,
+				9DB2354F206B39C400005D11 /* NSString+TYStringExtension.h */,
+				9DB23550206B39C400005D11 /* NSString+TYStringExtension.m */,
+				9DB23552206B3C0D00005D11 /* UIImage+TYImageExtension.h */,
+				9DB23553206B3C0D00005D11 /* UIImage+TYImageExtension.m */,
+				9DB23555206B3DE400005D11 /* NSData+TYDataExtension.h */,
+				9DB23556206B3DE400005D11 /* NSData+TYDataExtension.m */,
+				9DB23558206B3E8D00005D11 /* UIButton+TYButtonExtension.h */,
+				9DB23559206B3E8D00005D11 /* UIButton+TYButtonExtension.m */,
+			);
+			path = TYExtension;
+			sourceTree = "<group>";
+		};
+		B7460C3921B916EF001A72E5 /* TYDispatchTimer */ = {
+			isa = PBXGroup;
+			children = (
+				9D830274216067090096B832 /* TYWeakProxy.h */,
+				9D830273216067090096B832 /* TYWeakProxy.m */,
+				9DC62F282179BD3C00EC0C3D /* TYDispatchTimer.h */,
+				9DC62F292179BD3C00EC0C3D /* TYDispatchTimer.m */,
+			);
+			path = TYDispatchTimer;
+			sourceTree = "<group>";
+		};
+		B7460C3A21B917AD001A72E5 /* AboutSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B7460C3C21B91829001A72E5 /* TYToolSet-Bridging-Header.h */,
+				B7460C3F21B918D2001A72E5 /* TYAboutSwiftVC.swift */,
+			);
+			path = AboutSwift;
+			sourceTree = "<group>";
+		};
+		B7460C3B21B917CA001A72E5 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				9D93130E206A559600A3877B /* TYToolSet.h */,
+				9D958E58206C84F4009CFC6F /* TYTools.h */,
+				9D958E59206C84F4009CFC6F /* TYTools.m */,
+				9D93130B206A54D300A3877B /* TYPhotoPicker.h */,
+				9D93130C206A54D300A3877B /* TYPhotoPicker.m */,
+				9DB23543206B316300005D11 /* TYDrawingView.h */,
+				9DB23544206B316300005D11 /* TYDrawingView.m */,
+				B7BF4A1221B147C500498CD2 /* TYSingleMacro.h */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,11 +301,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TY;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Sheldon;
 				TargetAttributes = {
 					9D9312E6206A4DDC00A3877B = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -334,6 +372,7 @@
 				9DB23569206B820F00005D11 /* TYPresentDestinationController.m in Sources */,
 				9DC62F2A2179BD3C00EC0C3D /* TYDispatchTimer.m in Sources */,
 				9DB23560206B405700005D11 /* TYExampleController.m in Sources */,
+				B7460C4021B918D2001A72E5 /* TYAboutSwiftVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +412,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -380,6 +420,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -428,6 +469,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -435,6 +477,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -467,12 +510,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CJ5L2XW65B;
 				INFOPLIST_FILE = TYToolSet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sheldon.TYToolSet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TYToolSet/TYToolSet/AboutSwift/TYToolSet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -481,12 +529,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CJ5L2XW65B;
 				INFOPLIST_FILE = TYToolSet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sheldon.TYToolSet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TYToolSet/TYToolSet/AboutSwift/TYToolSet-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
