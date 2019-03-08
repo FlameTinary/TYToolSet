@@ -31,8 +31,9 @@
     TYExampleItem * item2 = [TYExampleItem itemWithTitle:@"转场动画" object:[TYPresentBaseController class]];
     TYExampleItem * item3 = [TYExampleItem itemWithTitle:@"CABaseAnimation" object:[TYCABaseAnimationViewController class]];
     TYExampleItem * item4 = [TYExampleItem itemWithTitle:@"Swift相关" object:[TYAboutSwiftVC class]];
+    TYExampleItem * item5 = [TYExampleItem itemWithTitle:@"多线程相关" object:NSClassFromString(@"TYOprationDemoController")];
     
-    _items = [NSArray arrayWithObjects:item0, item1, item2, item3, item4, nil];
+    _items = [NSArray arrayWithObjects:item0, item1, item2, item3, item4, item5, nil];
     
     [self setUpTableView];
 }

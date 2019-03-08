@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		088C07FE22311A6100304668 /* TYOprationDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 088C07FD22311A6100304668 /* TYOprationDemoController.m */; };
+		088C080122311E9500304668 /* TYOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 088C080022311E9500304668 /* TYOperation.m */; };
 		9D830275216067090096B832 /* TYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D830273216067090096B832 /* TYWeakProxy.m */; };
 		9D9312EC206A4DDC00A3877B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9312EB206A4DDC00A3877B /* AppDelegate.m */; };
 		9D9312F2206A4DDC00A3877B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D9312F0206A4DDC00A3877B /* Main.storyboard */; };
@@ -40,6 +42,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		088C07FC22311A6100304668 /* TYOprationDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYOprationDemoController.h; sourceTree = "<group>"; };
+		088C07FD22311A6100304668 /* TYOprationDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYOprationDemoController.m; sourceTree = "<group>"; };
+		088C07FF22311E9500304668 /* TYOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYOperation.h; sourceTree = "<group>"; };
+		088C080022311E9500304668 /* TYOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYOperation.m; sourceTree = "<group>"; };
 		9D830273216067090096B832 /* TYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYWeakProxy.m; sourceTree = "<group>"; };
 		9D830274216067090096B832 /* TYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYWeakProxy.h; sourceTree = "<group>"; };
 		9D9312E7206A4DDC00A3877B /* TYToolSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYToolSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +180,8 @@
 				9DB2355C206B403900005D11 /* TYBaseViewController.m */,
 				9DB2355E206B405700005D11 /* TYExampleController.h */,
 				9DB2355F206B405700005D11 /* TYExampleController.m */,
+				088C07FC22311A6100304668 /* TYOprationDemoController.h */,
+				088C07FD22311A6100304668 /* TYOprationDemoController.m */,
 				9D931305206A512400A3877B /* TYPhotoPickerController.h */,
 				9D931306206A512400A3877B /* TYPhotoPickerController.m */,
 				9DB23540206B312700005D11 /* TYDrawViewController.h */,
@@ -186,6 +194,8 @@
 				9DB23565206B7FCE00005D11 /* TYPresentTransitionOne.m */,
 				9DB61B4A21606C2000A4E897 /* TYCABaseAnimationViewController.h */,
 				9DB61B4B21606C2000A4E897 /* TYCABaseAnimationViewController.m */,
+				088C07FF22311E9500304668 /* TYOperation.h */,
+				088C080022311E9500304668 /* TYOperation.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -353,6 +363,7 @@
 				9DB23554206B3C0D00005D11 /* UIImage+TYImageExtension.m in Sources */,
 				9DB23563206B7F9800005D11 /* TYPresentBaseController.m in Sources */,
 				9DB23542206B312700005D11 /* TYDrawViewController.m in Sources */,
+				088C080122311E9500304668 /* TYOperation.m in Sources */,
 				9D9312FA206A4DDC00A3877B /* main.m in Sources */,
 				9DB61B4C21606C2000A4E897 /* TYCABaseAnimationViewController.m in Sources */,
 				9DB2354B206B371900005D11 /* UIView+TYViewExtension.m in Sources */,
@@ -367,6 +378,7 @@
 				9DB61B572160C45A00A4E897 /* TYProgress.m in Sources */,
 				9DB23566206B7FCE00005D11 /* TYPresentTransitionOne.m in Sources */,
 				9DB23548206B338700005D11 /* CALayer+TYLayerColor.m in Sources */,
+				088C07FE22311A6100304668 /* TYOprationDemoController.m in Sources */,
 				9D93130D206A54D300A3877B /* TYPhotoPicker.m in Sources */,
 				9DB61B5121606D0700A4E897 /* TYHeartView.m in Sources */,
 				9DB23569206B820F00005D11 /* TYPresentDestinationController.m in Sources */,
